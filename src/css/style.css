@@ -31,16 +31,39 @@
 
 .tab-block__tab-item {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
+  text-align: center;
   width: 106px;
   height: 80px;
   background: rgba(255, 255, 255, 0.01);
+  cursor: pointer;
+  color: #929699;
 }
 
-.tab-block__tab-item_current {
+.tab-block__tab-item_active {
   color: #005693;
+}
+
+.tab-block__tab-item_active .tab-item__line {
+  position: absolute;
+  bottom: 0;
+  color: #005693;
+  width: 106px;
+  height: 4px;
+  background: #005693;
+  z-index: 2;
+}
+
+.wrapper__line {
+  background: #929699;
+  width: 1280px;
+  height: 1px;
+  margin-left: 80px;
+  margin-bottom: 24px;
+  z-index: 1;
 }
 
 .content-block {

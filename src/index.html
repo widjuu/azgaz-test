@@ -6,16 +6,27 @@
     <link rel="stylesheet" href="./css/fonts.css" />
     <link rel="stylesheet" type="text/css" href="./css/style.css" />
     <link rel="stylesheet" href="./css/normalize.css" />
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"
+    ></script>
     <title>Azgaz-test</title>
   </head>
   <body>
     <div class="wrapper">
       <h1 class="wrapper__tittle">Медиа</h1>
       <div class="tab-block">
-        <div class="tab-block__tab-item tab-block__tab-item_current">ФОТО</div>
-        <div class="tab-block__tab-item">ВИДЕО</div>
+        <div class="tab-block__tab-item tab-block__tab-item_active">
+          <span>ФОТО</span>
+          <div class="tab-item__line"></div>
+        </div>
+        <div class="tab-block__tab-item">
+          <span>ВИДЕО</span>
+          <div class="tab-item__line"></div>
+        </div>
       </div>
-      <div class="content-block">
+      <div class="wrapper__line"></div>
+      <div class="content-block content-block_active">
         <!--first item start-->
         <div class="content-block__content-item">
           <img class="content-item__image" src="../public/images/image1.jpg" />
@@ -111,7 +122,9 @@
         </div>
         <!--third item end-->
       </div>
+      <div class="content-block">hello</div>
       <button class="all-button">Все фото</button>
     </div>
+    <script src="js/index.js"></script>
   </body>
 </html>
