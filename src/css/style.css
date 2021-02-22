@@ -81,20 +81,18 @@
 .content-block {
   display: flex;
   flex-direction: row;
+  flex-wrap: nowrap;
   padding-left: 80px;
-  padding-right: 80px;
+  padding-right: 72px;
 }
 
 .content-block__content-item {
-  width: 416px;
+  width: 416;
   height: 450px;
   display: flex;
   flex-direction: column;
-}
-
-.content-block__content-item_center {
-  margin-left: 16px;
-  margin-right: 16px;
+  margin-left: 8px;
+  margin-right: 8px;
 }
 
 .content-item__image {
@@ -125,6 +123,7 @@
   flex-direction: column;
   background: #ffffff;
   height: 220px;
+  width: 416px;
 }
 
 .content-info__data-group {
