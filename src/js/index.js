@@ -1,7 +1,7 @@
 //slick slider
 $(document).ready(function () {
   $(`.content-block.content-block_active`).slick({
-    infinite: true,
+    infinite: false,
     swipe: true,
     dots: false,
     slidesToShow: 3,
@@ -9,7 +9,7 @@ $(document).ready(function () {
     variableWidth: true,
     responsive: [
       {
-        breakpoint: 1440,
+        breakpoint: 1441,
         settings: {
           variableWidth: true,
           slidesToShow: 3,
@@ -25,7 +25,7 @@ $(document).ready(function () {
         },
       },
       {
-        breakpoint: 360,
+        breakpoint: 361,
         settings: {
           variableWidth: true,
           slidesToShow: 1,
