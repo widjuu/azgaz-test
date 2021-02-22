@@ -15,3 +15,8 @@ $(".wrapper").each(function () {
     .eq(0)
     .addClass("tab-block__tab-item_active");
 });
+
+//fadeInUp
+jQuery(".content-block .content-block__content-item").addClass(
+  "animated fadeInUp"
+);
