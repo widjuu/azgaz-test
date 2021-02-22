@@ -1,3 +1,41 @@
+//slick slider
+$(document).ready(function () {
+  $(`.content-block.content-block_active`).slick({
+    infinite: true,
+    swipe: true,
+    dots: false,
+    slidesToShow: 3,
+    slidesToScroll: 3,
+    variableWidth: true,
+    responsive: [
+      {
+        breakpoint: 1440,
+        settings: {
+          variableWidth: true,
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 769,
+        settings: {
+          variableWidth: true,
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 360,
+        settings: {
+          variableWidth: true,
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
+});
+
 // jQuery
 $(".wrapper").each(function () {
   let ths = $(this);
