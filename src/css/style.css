@@ -101,6 +101,25 @@
   height: 230px;
 }
 
+.content-item__photo-counter {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 184px;
+  margin-left: 335px;
+}
+
+.photo-counter__counter {
+  padding-left: 9px;
+  font-family: Verdana;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 13px;
+  line-height: 22px;
+  color: #ffffff;
+}
+
 .content-item__content-info {
   display: flex;
   flex-direction: column;
