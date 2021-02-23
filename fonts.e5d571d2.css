@@ -1,0 +1,50 @@
+@font-face {
+  font-family: "Verdana";
+  src: url("/Verdana.0e119817.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Verdana";
+  src: url("/Verdana-Bold.8063294e.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Verdana";
+  src: url("/Verdana-Italic.fc3b5d2d.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Verdana";
+  src: url("/Verdana-BoldItalic.f69b6c94.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: url("/Geometria.8f5bda86.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Geometria";
+  src: url("/Geometria-Bold.55a1e789.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+/*# sourceMappingURL=/fonts.e5d571d2.css.map */
