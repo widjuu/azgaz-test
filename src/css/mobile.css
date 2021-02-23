@@ -10,8 +10,8 @@
   }
 
   .wrapper__tittle,
-  .content-block,
-  .tab-block,
+  .wrapper__content-block,
+  .wrapper__tab-block,
   .wrapper__line {
     padding-left: 32px;
     padding-right: 32px;
@@ -58,7 +58,7 @@
     margin-bottom: 8px;
   }
 
-  .tab-block {
+  .wrapper__tab-block {
     font-size: 11px;
     line-height: 16px;
     letter-spacing: 1.00833px;
@@ -75,8 +75,8 @@
   }
 
   .wrapper__tittle,
-  .content-block,
-  .tab-block {
+  .wrapper__content-block,
+  .wrapper__tab-block {
     padding-left: 20px;
     padding-right: 20px;
   }

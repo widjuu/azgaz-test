@@ -1,6 +1,6 @@
 //slick slider
 $(document).ready(function () {
-  $(`.content-block`).slick({
+  $(`.wrapper__content-block`).slick({
     infinite: false,
     swipe: true,
     dots: false,
@@ -39,7 +39,7 @@ $(document).ready(function () {
 // jQuery
 $(".wrapper").each(function () {
   let ths = $(this);
-  ths.find(".content-block").not(":first").hide();
+  ths.find(".wrapper__content-block").not(":first").hide();
   ths
     .find(".tab-block__tab-item")
     .click(function () {
@@ -48,13 +48,13 @@ $(".wrapper").each(function () {
         .removeClass("tab-block__tab-item_active")
         .eq($(this).index())
         .addClass("tab-block__tab-item_active");
-      ths.find(".content-block").hide().eq($(this).index()).fadeIn();
+      ths.find(".wrapper__content-block").hide().eq($(this).index()).fadeIn();
     })
     .eq(0)
     .addClass("tab-block__tab-item_active");
 });
 
 //fadeInUp
-jQuery(".content-block .content-block__content-item").addClass(
+jQuery(".wrapper__content-block .content-block__content-item").addClass(
   "animated fadeInUp"
 );

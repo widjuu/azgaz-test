@@ -1,7 +1,14 @@
+:root {
+  --main-background: ##f4f4f4;
+  --main-text: #929699;
+  --active-colour: #005693;
+  --secondary-text: #ffffff;
+}
+
 .wrapper {
   width: 1440px;
   height: 800px;
-  background: #f4f4f4;
+  background: var(--main-background);
   margin: 0 auto;
   display: flex;
   flex-direction: column;
@@ -19,7 +26,7 @@
   padding-left: 80px;
 }
 
-.tab-block {
+.wrapper__tab-block {
   display: flex;
   flex-direction: row;
   padding-left: 80px;
@@ -41,7 +48,11 @@
   height: 80px;
   background: rgba(255, 255, 255, 0.01);
   cursor: pointer;
-  color: #929699;
+  color: var(--main-text);
+}
+
+.tab-block__tab-item:hover {
+  background: #dcdcdc;
 }
 
 .tab-block__tab-item-1 {
@@ -53,32 +64,32 @@
 }
 
 .tab-block__tab-item_active {
-  color: #005693;
+  color: var(--active-colour);
 }
 
 .tab-block__tab-item_active .tab-item__line {
   position: absolute;
   bottom: 0;
-  color: #005693;
+  color: var(--active-colour);
   width: 100%;
   height: 3px;
-  background: #005693;
+  background: var(--active-colour);
   z-index: 2;
 }
 
 .wrapper__line {
-  background: #929699;
+  background: var(--main-text);
   width: 1280px;
   height: 1px;
   margin-left: 80px;
   margin-bottom: 24px;
   z-index: 1;
-  background: #929699;
+  background: var(--main-text);
   opacity: 0.3;
   margin-top: -1px;
 }
 
-.content-block {
+.wrapper__content-block {
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
@@ -116,7 +127,7 @@
   font-weight: normal;
   font-size: 13px;
   line-height: 22px;
-  color: #ffffff;
+  color: var(--secondary-text);
 }
 
 .content-item__content-info {
@@ -125,6 +136,10 @@
   background: #ffffff;
   height: 220px;
   width: 416px;
+}
+
+.content-item__content-info:hover {
+  box-shadow: inset 0 0 0 1px var(--main-text);
 }
 
 .content-info__data-group {
@@ -144,7 +159,13 @@
   line-height: 16px;
   letter-spacing: 1px;
   text-transform: uppercase;
-  color: #929699;
+  color: var(--main-text);
+}
+
+.content-info__link:hover {
+  -webkit-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
 .content-info__data {
@@ -157,7 +178,7 @@
   font-family: Geometria;
   font-style: normal;
   font-weight: normal;
-  color: #ffffff;
+  color: var(--secondary-text);
 }
 
 .data__day {
@@ -212,7 +233,7 @@
   font-weight: normal;
   font-size: 13px;
   line-height: 22px;
-  color: #929699;
+  color: var(--main-text);
   margin-bottom: 24px;
 }
 
@@ -229,7 +250,12 @@
   font-size: 14px;
   line-height: 24px;
   text-align: center;
-  color: #ffffff;
+  color: var(--secondary-text);
   cursor: pointer;
   align-self: center;
+  opacity: 1;
+}
+
+.all-button:hover {
+  opacity: 0.6;
 }
