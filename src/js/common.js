@@ -1,6 +1,6 @@
 //slick slider
 $(document).ready(function () {
-  $(`.content-block.content-block_active`).slick({
+  $(`.content-block`).slick({
     infinite: false,
     swipe: true,
     dots: false,
