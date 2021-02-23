@@ -5,8 +5,12 @@
   "main": "index.js",
   "scripts": {
     "start": "parcel src/index.html /public/**/*",
-    "build": "parcel build src/index.html /public/**/*",
-    "deploy": "rm -rf dist/ && npm run build && gh-pages -d dist"
+    "build": "parcel build src/index.html /public/**/* --public-url /azgaz-test/",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/widjuu/azgaz-test.git"
   },
   "keywords": [],
   "author": "",
